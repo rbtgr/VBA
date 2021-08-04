@@ -1,0 +1,17 @@
+
+Attribute VB_Name = "Unbond_and_Fill"
+
+Sub 結合を解除して同じ値を入力()
+  Dim cl As Range
+  Dim val As Variant
+  
+  For Each cl In Selection
+    If rng.MergeCells Then
+      val = rng.Value
+      With rng.MergeArea
+        .UnMerge
+        .Value = val
+      End With
+    End If
+  Next cl
+End Sub
