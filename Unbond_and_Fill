@@ -6,9 +6,9 @@ Sub 結合を解除して同じ値を入力()
   Dim val As Variant
   
   For Each cl In Selection
-    If rng.MergeCells Then
-      val = rng.Value
-      With rng.MergeArea
+    If cl.MergeCells Then
+      val = cl.Value
+      With cl.MergeArea
         .UnMerge
         .Value = val
       End With
