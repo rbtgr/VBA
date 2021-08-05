@@ -1,4 +1,4 @@
-Attribute VB_Name = "commentMacro"
+Attribute VB_Name = "Erase_top_border_at_blanko"
 Sub 空白セルの上罫線消し()
     Dim Row As Long
     Dim Clm As Long
