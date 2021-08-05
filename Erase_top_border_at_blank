@@ -1,0 +1,18 @@
+Attribute VB_Name = "commentMacro"
+Sub 空白セルの上罫線消し()
+    Dim Row As Long
+    Dim Clm As Long
+    Dim rng As Range
+    
+    Set rng = Selection
+    
+    For Row = rng(1).Row To rng(rng.Count).Row
+        For Clm = rng(1).Column To rng(rng.Count).Column
+            If Cells(Row, Clm).Value <> "" Then
+                Exit For
+            Else
+                Cells(Row, Clm).Borders(xlEdgeTop).LineStyle = xlNone
+            End If
+        Next Clm
+    Next Row
+End Sub
