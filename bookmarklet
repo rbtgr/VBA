@@ -1,0 +1,7 @@
+
+白文字黒背景
+javascript:(function(){var style=document.createElement('style');var head=document.getElementsByTagName('head');style.setAttribute('type', 'text\/css');style.innerHTML='* { color:#eee!important; background-image:none!important; background-color:#000!important;} a{ text-decoration: underline!important; color:#eee!important; }';head[0].appendChild(style);})();
+
+BIZ UDF化
+javascript:(function(){document.head.innerHTML+="<style>body,h1,h2,h5,h3,h4,p,div,span{font-family: 'BIZ UDPGothic' !important;}</style>";})()
+
