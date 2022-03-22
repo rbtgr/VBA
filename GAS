@@ -1,0 +1,15 @@
+
+//列を数値から英文字に変換
+function columnNumToA(col){
+
+  pos1 = (col -1) % 26;
+  pos2 = (Math.floor((col - 1) / 26)) % 26;
+  str1 = String.fromCharCode(65 + pos1);
+  col >= 27 ?  str2 = String.fromCharCode(64 + pos2): str2 = "" ;
+  return str2 + str1 ;
+
+}
+
+
+
+
