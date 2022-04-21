@@ -10,6 +10,11 @@ function columnNumToLetter(col){
 }
 
 
+// 選択範囲の中横線削除
+function eleseMidBorder() {
+  let sheet = SpreadsheetApp.getActiveSheet();
+  sheet.getActiveRangeList().setBorder(null, null, null, null, null, false);
+}
 
 
 
