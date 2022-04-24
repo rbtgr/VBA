@@ -18,3 +18,16 @@ function eleseMidBorder() {
 
 
 
+// 繰り返し
+// for eachは非推奨構文
+var array = [10, 20, 30];
+for each (var x in array) {
+  console.log(x);
+}
+
+// ES2015 では for (var 仮引数 of 変数) を使う
+for (var x of array) {
+  console.log(x);
+}
+
+
