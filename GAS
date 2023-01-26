@@ -30,4 +30,13 @@ for (var x of array) {
   console.log(x);
 }
 
-
+// 選択範囲セルに対して実施
+function eachRange() {
+  let ss = SpreadsheetApp.getActiveSheet();
+  let range =  ss.getActiveRange();   
+  for(let i = range.getRow(); i < range.getLastRow() + 1; i++){
+    for(let j = range.getColumn(); j < range.getLastColumn() + 1; j++ ){
+      console.log(ss.getRange(i,j).getA1Notation() );
+    };
+  };
+};
